@@ -1,0 +1,138 @@
+/* Custom Properties */
+:root {
+    --negro: #000;
+    --blanco: #fff;
+}
+
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+html {
+    box-sizing: border-box;
+    /* Tamaño fuente = 10px */
+    font-size: 62.5%;
+    /* Familia por defecto */
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    /* Color de texto base */
+    color: #000;
+}
+body {
+    /* 1rem = 10px */
+    font-size: 16px;
+    margin: 0;
+}
+
+ul, ol, li {
+    /* Quita viñetas */
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+a {
+    /* Quita underline */
+    text-decoration: none;
+}
+p {
+    margin: 0;
+}
+img {
+    max-width: 100%;
+}
+
+/* Tipografia */
+
+h1 {
+    font-size: 3.8rem;
+    color: #fff;
+}
+h2 {
+    font-size: 2.8rem;
+}
+h3 {
+    font-size: 1.8rem;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    margin: 0;
+    padding: 0;
+}
+
+/* Utilidades */
+.selected {
+    color: var(--negro) !important;
+}
+
+/* Navegacion */
+.navbar {
+    background-color: var(--blanco);
+    padding: 2rem;
+    box-shadow: 0 2px 1rem rgba(0, 0, 0, 0.4);
+}
+
+.nav-center {
+    display: grid;
+    grid-template-columns: 3fr 0.5fr 0.5fr 0.5fr;
+    width: 90%;
+    margin: 0 auto;
+}
+
+.nav-center h4 {
+    margin-left: 5rem;
+    color: cornflowerblue;
+}
+
+.nav-center a {
+    color: lightskyblue;
+}
+
+.nav-center a:hover {
+    color: var(--negro);
+}
+
+.nav-center li {
+    text-align: center;
+}
+
+/* Main */
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    text-align: center;
+}
+
+.container h2 {
+    margin: 2rem;
+    padding: 2rem;
+    background-color: var(--negro);
+    color: var(--blanco);
+    border-radius: 7px;
+}
+
+.container span {
+    color: cadetblue;
+}
+
+.container button {
+    margin: 2rem;
+}
+
+/* Button */
+.btn {
+    background-color: transparent;
+    padding: 1rem 3rem;
+    text-transform: uppercase;
+    font-weight: 700;
+    border-radius: 7px;
+    border: 3px solid var(--negro);
+    cursor: pointer;
+    box-shadow: 0 2px 1rem rgba(0, 0, 0, 0.4);
+}
+
+.btn:hover {
+    background-color: var(--negro);
+    color: var(--blanco);
+}
