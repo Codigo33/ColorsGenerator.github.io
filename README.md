@@ -1,1 +1,1 @@
-# ColorsGenerator.github.io
+# Colors generator with JavaScript
